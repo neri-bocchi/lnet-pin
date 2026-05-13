@@ -29,10 +29,12 @@ body {
   color: var(--ink);
   font-family: "Manrope", sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(51, 209, 255, 0.14), transparent 24rem),
-    radial-gradient(circle at 80% 20%, rgba(37, 109, 255, 0.14), transparent 28rem),
-    radial-gradient(circle at bottom right, rgba(36, 255, 194, 0.08), transparent 30rem),
-    linear-gradient(180deg, #040b13 0%, #071018 45%, #09131d 100%);
+    radial-gradient(circle at 12% 18%, rgba(57, 155, 255, 0.16), transparent 20rem),
+    radial-gradient(circle at 85% 14%, rgba(61, 224, 255, 0.1), transparent 18rem),
+    radial-gradient(circle at 50% 82%, rgba(31, 98, 192, 0.14), transparent 28rem),
+    linear-gradient(140deg, rgba(255, 255, 255, 0.025) 0%, transparent 32%),
+    linear-gradient(180deg, #02060d 0%, #07111b 38%, #081522 68%, #050c14 100%);
+  background-attachment: fixed;
 }
 
 body::before {
@@ -41,11 +43,25 @@ body::before {
   inset: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(95, 151, 196, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(95, 151, 196, 0.08) 1px, transparent 1px);
-  background-size: 32px 32px;
-  mask-image: radial-gradient(circle at center, black 50%, transparent 92%);
-  opacity: 0.5;
+    linear-gradient(rgba(124, 170, 210, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(124, 170, 210, 0.05) 1px, transparent 1px),
+    linear-gradient(135deg, rgba(81, 135, 184, 0.08), transparent 42%);
+  background-size: 40px 40px, 40px 40px, 100% 100%;
+  mask-image: radial-gradient(circle at center, black 42%, transparent 88%);
+  opacity: 0.55;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 22% 24%, rgba(255, 255, 255, 0.045), transparent 10rem),
+    radial-gradient(circle at 76% 30%, rgba(51, 209, 255, 0.05), transparent 12rem),
+    radial-gradient(circle at 58% 72%, rgba(67, 116, 255, 0.05), transparent 16rem);
+  filter: blur(22px);
+  opacity: 0.9;
 }
 
 .site-shell {
@@ -154,6 +170,10 @@ body::before {
   position: relative;
 }
 
+.hero-copy {
+  max-width: 56rem;
+}
+
 .hero::after {
   content: "";
   position: absolute;
@@ -179,8 +199,9 @@ body::before {
 }
 
 .hero-copy h1 {
-  max-width: 12ch;
-  font-size: clamp(3.3rem, 6.1vw, 6.1rem);
+  max-width: 13.5ch;
+  font-size: clamp(2.6rem, 4.6vw, 4.7rem);
+  line-height: 0.98;
 }
 
 .eyebrow,
@@ -210,7 +231,7 @@ body::before {
 }
 
 .lede {
-  max-width: 44rem;
+  max-width: 46rem;
   margin: 1.5rem 0 0;
   font-size: 1.15rem;
 }
@@ -496,7 +517,7 @@ body::before {
   }
 
   .hero-copy h1 {
-    max-width: 14ch;
+    max-width: 12.5ch;
   }
 }
 
@@ -536,6 +557,7 @@ body::before {
 
   .hero-copy h1 {
     font-size: clamp(3rem, 16vw, 4.4rem);
+    max-width: 12ch;
   }
 
   .framework-item {
