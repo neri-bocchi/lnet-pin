@@ -1,6 +1,6 @@
-# LNet PIN
+# LNet SPIN
 
-Sitio estatico institucional para LNet Public Identity Network.
+Sitio estatico institucional para LNet Sovereign Public Identity Network.
 
 ## Publicacion en GitHub Pages
 
