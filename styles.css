@@ -180,7 +180,7 @@ body::before {
 
 .hero-copy h1 {
   max-width: 12ch;
-  font-size: clamp(3.8rem, 7vw, 7.2rem);
+  font-size: clamp(3.3rem, 6.1vw, 6.1rem);
 }
 
 .eyebrow,
