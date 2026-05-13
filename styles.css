@@ -166,12 +166,12 @@ body::after {
   gap: 2rem;
   align-items: end;
   min-height: calc(100vh - 8rem);
-  padding: 5rem 0 3rem;
+  padding: 3.25rem 0 3rem;
   position: relative;
 }
 
 .hero-copy {
-  max-width: 56rem;
+  max-width: 52rem;
 }
 
 .hero::after {
@@ -199,9 +199,10 @@ body::after {
 }
 
 .hero-copy h1 {
-  max-width: 13.5ch;
-  font-size: clamp(2.4rem, 4.2vw, 4.3rem);
-  line-height: 0.98;
+  max-width: 15ch;
+  font-size: clamp(2.22rem, 3.85vw, 3.05rem);
+  line-height: 1.02;
+  letter-spacing: -0.025em;
 }
 
 .eyebrow,
@@ -231,7 +232,7 @@ body::after {
 }
 
 .lede {
-  max-width: 46rem;
+  max-width: 42rem;
   margin: 1.5rem 0 0;
   font-size: 1.15rem;
 }
@@ -517,7 +518,7 @@ body::after {
   }
 
   .hero-copy h1 {
-    max-width: 12.5ch;
+    max-width: 13ch;
   }
 }
 
@@ -552,7 +553,7 @@ body::after {
 
   .hero {
     min-height: auto;
-    padding-top: 3.5rem;
+    padding-top: 2.5rem;
   }
 
   .hero-copy h1 {
